@@ -3,7 +3,7 @@
 
 ## Getting Started
 
-Compiles, tests and deploys an application conditionally depending on the pipeline.json located in the application repository. The whole pipeline runs within a container so there is Docker installed within Docker (docker.sock).
+From within a container, compiles, tests and archives an application conditionally depending on the pipeline.json located in the application repository. The "archive" step containerises the app and pushes it into a container repo so we need Docker installed within Docker (docker.sock).
 
 ### Run:
 
