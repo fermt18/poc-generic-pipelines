@@ -11,12 +11,12 @@ From within a container, compiles, tests and archives an application conditional
 docker build -t pipeline -f Dockerfile.java .
 ```
 ```
-docker run ^
-  -v /var/run/docker.sock:/var/run/docker.sock ^
-  --env GITHUB_URL=<application repository> ^
-  --env DOCKER_USERNAME=<docker hub username> ^
-  --env DOCKER_PASSWORD=<docker hub password> ^
-  pipeline ^
+docker run \
+  -v /var/run/docker.sock:/var/run/docker.sock \
+  --env GITHUB_URL=<application repository> \
+  --env DOCKER_USERNAME=<docker hub username> \
+  --env DOCKER_PASSWORD=<docker hub password> \
+  pipeline \
   /stages/00_run.sh
 ```
 
