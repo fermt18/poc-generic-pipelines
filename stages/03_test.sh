@@ -19,6 +19,9 @@ case "${application_type}" in
   "node")
     npm run test
     ;;
+  "python")
+    pytest
+    ;;
   *)
     echo "Unable to test application type ${application_type}"
     exit 1

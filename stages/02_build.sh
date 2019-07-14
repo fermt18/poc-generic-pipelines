@@ -16,6 +16,9 @@ case "${application_type}" in
   "node")
     npm install
     ;;
+  "python")
+    pip3 install -r requirements.txt
+    ;;
   *)
     echo "Unable to build application type ${application_type}"
     exit 1
