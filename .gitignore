@@ -102,6 +102,6 @@ Temporary Items
 # Tower.app - http://www.git-tower.com/
 Icon.png
 
-
+*.sh
 # End of https://www.gitignore.io/api/git,tower,macos,jetbrains
 
